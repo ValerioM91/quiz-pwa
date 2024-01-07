@@ -16,7 +16,7 @@ const SelectTrigger = ({
 }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>) => (
   <SelectPrimitive.Trigger
     className={cn(
-      "text-indigo9 data-[placeholder]:text-indigo9 inline-flex min-h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none transition-all hover:bg-mauve3",
+      "inline-flex min-h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none text-indigo9 transition-all data-[placeholder]:text-indigo9 md:hover:bg-mauve3",
       className,
     )}
     {...props}
@@ -67,7 +67,7 @@ const SelectLabel = ({ className, ...props }: React.ComponentPropsWithoutRef<typ
 const SelectItem = ({ className, children, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>) => (
   <SelectPrimitive.Item
     className={cn(
-      "text-indigo11 data-[highlighted]:bg-indigo9 relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-xs outline-none data-[highlighted]:text-white sm:text-sm",
+      "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-xs text-indigo11 outline-none data-[highlighted]:bg-indigo9 data-[highlighted]:text-white sm:text-sm",
       className,
     )}
     {...props}

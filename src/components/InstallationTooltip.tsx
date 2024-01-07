@@ -15,16 +15,15 @@ const InstallationTooltip = () => {
   const isAndroid = deviceType === "Android"
 
   useEffect(() => {
-    const installationShownExpiration = localStorage.getItem("installationShownExpiration")
+    const installationShownExpiration = sessionStorage.getItem("installationShownExpiration")
     if (installationShownExpiration && new Date().getTime() < +installationShownExpiration) return
 
     setShouldShowTooltip(true)
-    localStorage.setItem("installationShownExpiration", (new Date().getTime() + 3600 * 1000).toString())
+    sessionStorage.setItem("installationShownExpiration", (new Date().getTime() + 3600 * 1000).toString())
   }, [])
 
   const closeTooltip = useCallback(() => {
     setShouldShowTooltip(false)
-    localStorage.setItem("installationShownExpiration", (new Date().getTime() + 3600 * 1000).toString())
   }, [])
 
   if (!shouldShowTooltip) return null

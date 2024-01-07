@@ -7,10 +7,11 @@ const pwaOptions: Partial<VitePWAOptions> = {
   mode: "development",
   base: "/",
   includeAssets: ["favicon.svg"],
+
   manifest: {
     name: "Quizzy",
     short_name: "Quizzy",
-    theme_color: "#4663d5",
+    theme_color: "#3E63DD",
     icons: [
       {
         src: "/32.png",

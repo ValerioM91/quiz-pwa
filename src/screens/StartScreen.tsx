@@ -16,7 +16,7 @@ const StartScreen = () => {
   return (
     <Main>
       <form className="grid w-full max-w-md gap-6 rounded-lg bg-white p-10">
-        <h2 className="text-indigo11 text-center text-xl font-bold leading-none md:text-2xl">Choose your quiz</h2>
+        <h2 className="text-center text-xl font-bold leading-none text-indigo11 md:text-2xl">Choose your quiz</h2>
 
         <div className="flex flex-col gap-2">
           <Label htmlFor="category">Select a category</Label>
@@ -26,7 +26,7 @@ const StartScreen = () => {
             onValueChange={val => setCategory(+val as CategoryId)}
             onOpenChange={open => setSelectOpen(open)}
           >
-            <SelectTrigger id="category" className="capitalize">
+            <SelectTrigger id="category" className="capitalize" aria-label="Category">
               <SelectValue placeholder="Select category" />
             </SelectTrigger>
             <SelectContent style={{ width: "var(--radix-select-trigger-width)" }}>
@@ -47,7 +47,7 @@ const StartScreen = () => {
             onValueChange={(difficulty: Difficulty) => setDifficulty(difficulty)}
             onOpenChange={open => setSelectOpen(open)}
           >
-            <SelectTrigger id="difficulty" className="capitalize">
+            <SelectTrigger id="difficulty" className="capitalize" aria-label="Difficulty">
               <SelectValue placeholder="Select difficulty" />
             </SelectTrigger>
             <SelectContent>
@@ -66,7 +66,7 @@ const StartScreen = () => {
             type="number"
             name="amount"
             id="amount"
-            className="text-indigo9 data-[placeholder]:text-indigo9 inline-flex h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none transition-all hover:bg-mauve3 focus:bg-white"
+            className="inline-flex h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none text-indigo9 transition-all hover:bg-mauve3 focus:bg-white data-[placeholder]:text-indigo9"
             min={1}
             max={20}
             value={amount}

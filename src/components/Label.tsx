@@ -4,7 +4,7 @@ type Label = React.ComponentPropsWithoutRef<"label">
 
 const Label = ({ className, children, ...rest }: Label) => {
   return (
-    <label className={cn("text-indigo11 text-sm font-medium leading-none", className)} {...rest}>
+    <label className={cn("text-sm font-medium leading-none text-indigo11", className)} {...rest}>
       {children}
     </label>
   )
