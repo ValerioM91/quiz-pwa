@@ -23,7 +23,7 @@ const Tooltip = ({ children, closeTooltip, position = "bottom" }: TooltipProps) 
           <div className="flex items-start gap-1">
             {children}
             <Button
-              className="pointer-events-auto h-auto min-h-0 cursor-pointer p-1"
+              className="pointer-events-auto h-auto min-h-0 cursor-pointer p-1 shadow-none"
               size="icon"
               variant="ghost"
               onClick={closeTooltip}
