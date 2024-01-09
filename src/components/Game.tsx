@@ -29,7 +29,7 @@ const Game = ({ questions }: { questions: QuestionsResponseSchema["results"] }) 
 
   return (
     <Main>
-      <section className="grid w-full max-w-sm rounded-lg">
+      <section className="grid w-full max-w-sm rounded-lg text-indigo11">
         <div className="flex min-h-[420px] flex-col border-b p-2 pb-6 sm:pb-10">
           <div className="mb-4 flex items-center justify-between">
             <Link to="/" search={{}} variant="light" size="icon" aria-label="Go Back" className="skew-x-6 text-3xl">

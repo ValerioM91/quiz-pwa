@@ -11,7 +11,7 @@ export const buttonVariants = cva(
         tomato: "bg-red9 text-white",
         ruby: "bg-ruby9 text-white",
         yellow: "bg-yellow10",
-        amber: "bg-amber9 hover:bg-amber10/90",
+        amber: "bg-amber9 hover:bg-amber10/90 text-indigo12",
         green: "bg-green8 text-white",
         teal: "bg-teal9 text-white",
         mauve: "bg-mauve9 text-white hover:bg-mauve9/90",
