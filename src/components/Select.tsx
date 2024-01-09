@@ -67,7 +67,7 @@ const SelectLabel = ({ className, ...props }: React.ComponentPropsWithoutRef<typ
 const SelectItem = ({ className, children, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>) => (
   <SelectPrimitive.Item
     className={cn(
-      "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-xs text-indigo11 outline-none data-[highlighted]:bg-indigo9 data-[highlighted]:text-white sm:text-sm",
+      "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-xs font-medium text-indigo11 outline-none data-[highlighted]:bg-indigo9 data-[highlighted]:text-white sm:text-sm",
       className,
     )}
     {...props}
