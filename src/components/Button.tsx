@@ -8,8 +8,8 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     asChild?: boolean
   }
 
-const Button = ({ className, variant, size, ...props }: ButtonProps) => {
-  return <button className={cn(buttonVariants({ variant, size, className }))} {...props} />
+const Button = ({ className, variant, size, shadow, ...props }: ButtonProps) => {
+  return <button className={cn(buttonVariants({ variant, size, shadow, className }))} {...props} />
 }
 
 export default Button

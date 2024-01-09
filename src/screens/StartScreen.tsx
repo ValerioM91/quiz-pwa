@@ -15,11 +15,16 @@ const StartScreen = () => {
 
   return (
     <Main>
-      <form className="grid w-full max-w-md gap-6 rounded-lg bg-white p-10">
-        <h2 className="text-center text-xl font-bold leading-none text-indigo11 md:text-2xl">Choose your quiz</h2>
+      <h2 className="skewed-heading mb-4 px-12 py-8">QUIZZY</h2>
 
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="category">Select a category</Label>
+      <form className="grid w-full max-w-md gap-6 rounded-lg p-10">
+        <div className="flex flex-col rounded-lg ">
+          <Label
+            htmlFor="category"
+            className="inline-block skew-x-6 self-center rounded-t-md border-b border-white bg-white px-4 py-2"
+          >
+            <span className="inline-block -skew-x-6">Select a category</span>
+          </Label>
           <Select
             name="category"
             value={category.toString()}
@@ -39,8 +44,13 @@ const StartScreen = () => {
           </Select>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="difficulty">Select a difficulty</Label>
+        <div className="flex flex-col">
+          <Label
+            htmlFor="difficulty"
+            className="inline-block skew-x-6 self-center rounded-t-md border-b border-white bg-white px-4 py-2"
+          >
+            <span className="inline-block -skew-x-6">Select a difficulty</span>
+          </Label>
           <Select
             name="difficulty"
             value={difficulty}
@@ -60,13 +70,18 @@ const StartScreen = () => {
           </Select>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <Label htmlFor="amount">Number of questions</Label>
+        <div className="flex flex-col">
+          <Label
+            htmlFor="amount"
+            className="inline-block skew-x-6 self-center rounded-t-md border-b border-white bg-white px-4 py-2"
+          >
+            <span className="inline-block -skew-x-6">Number of questions</span>
+          </Label>
           <input
             type="number"
             name="amount"
             id="amount"
-            className="inline-flex h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none text-indigo9 transition-all hover:bg-mauve3 focus:bg-white data-[placeholder]:text-indigo9"
+            className="inline-flex h-12 w-full items-center justify-between gap-1 rounded-md bg-white px-3 py-2 text-sm leading-none text-indigo9 shadow-lg shadow-indigo12/50 transition-all hover:bg-mauve3 focus:bg-white data-[placeholder]:text-indigo9"
             min={1}
             max={20}
             value={amount}
@@ -76,11 +91,11 @@ const StartScreen = () => {
 
         <Link
           to="/game"
-          variant="indigo"
-          search={{ amount: 10, category, difficulty: "easy" }}
-          className={cn(selectOpen ? "pointer-events-none" : "pointer-events-auto")}
+          variant="amber"
+          search={{ amount, category, difficulty: "easy" }}
+          className={cn("mt-6 skew-x-6 uppercase", selectOpen ? "pointer-events-none" : "pointer-events-auto")}
         >
-          Start!
+          <span className="-skew-x-6">Start</span>
         </Link>
       </form>
 

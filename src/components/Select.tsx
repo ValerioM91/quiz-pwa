@@ -16,7 +16,7 @@ const SelectTrigger = ({
 }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>) => (
   <SelectPrimitive.Trigger
     className={cn(
-      "inline-flex min-h-12 w-full items-center justify-between gap-1 rounded-md border bg-white px-3 py-2 text-sm leading-none text-indigo9 transition-all data-[placeholder]:text-indigo9 md:hover:bg-mauve3",
+      "inline-flex min-h-12 w-full items-center justify-between gap-1 rounded-md bg-white px-3 py-2 text-sm font-medium leading-none text-indigo11 shadow-lg shadow-indigo12/50 transition-all data-[placeholder]:text-indigo11 md:hover:bg-mauve3",
       className,
     )}
     {...props}

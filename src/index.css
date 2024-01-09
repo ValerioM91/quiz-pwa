@@ -4,5 +4,14 @@
 
 body {
   font-family: "Inter Variable", sans-serif;
-  background-color: color(display-p3 0.276 0.384 0.837);
+  background-color: #3e63dd;
+  color: #1f2d5c;
+}
+
+.shadow-1 {
+  @apply shadow-lg shadow-indigo12/50;
+}
+
+.skewed-heading {
+  @apply shadow-1 -skew-y-3 skew-x-6 rounded-3xl bg-white text-4xl font-bold uppercase text-indigo11;
 }
