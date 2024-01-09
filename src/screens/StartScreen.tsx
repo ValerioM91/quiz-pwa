@@ -95,7 +95,7 @@ const StartScreen = () => {
           search={{ amount, category, difficulty: "easy" }}
           className={cn("mt-6 skew-x-6 uppercase", selectOpen ? "pointer-events-none" : "pointer-events-auto")}
         >
-          <span className="-skew-x-6">Start</span>
+          <span className="-skew-x-6">Start Game</span>
         </Link>
       </form>
 
