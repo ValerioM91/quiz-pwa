@@ -5,7 +5,6 @@ import Label from "../components/Label"
 import Main from "../components/Main"
 import Link from "../components/Link"
 import { cn } from "../utils/cn"
-import InstallationTooltip from "../components/InstallationTooltip"
 
 const StartScreen = () => {
   const [category, setCategory] = useState<CategoryId>(CATEGORIES[0]["id"])
@@ -98,8 +97,6 @@ const StartScreen = () => {
           <span className="-skew-x-6">Start Game</span>
         </Link>
       </form>
-
-      <InstallationTooltip />
     </Main>
   )
 }

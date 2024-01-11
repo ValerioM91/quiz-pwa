@@ -11,6 +11,7 @@ const pwaOptions: Partial<VitePWAOptions> = {
   manifest: {
     name: "Quizzy",
     short_name: "Quizzy",
+    description: "Quizzy is a quiz app",
     theme_color: "#3E63DD",
     icons: [
       {

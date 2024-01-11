@@ -9,11 +9,13 @@ import StartScreen from "./screens/StartScreen"
 import GameScreen from "./screens/GameScreen"
 import { quizParamsSchema } from "./utils/schemas"
 import { fetchQuestionsRequest } from "./utils/fetchQuestions"
+import InstallationButton from "./components/InstallationButton"
 
 const rootRoute = new RootRoute({
   component: () => (
     <>
       <Outlet />
+      <InstallationButton />
       <Toaster position="top-center" />
     </>
   ),

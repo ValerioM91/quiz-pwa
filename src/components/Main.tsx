@@ -6,7 +6,7 @@ const Main = ({ children }: { children: React.ReactNode }) => {
   return (
     <main
       className={cn(
-        "bg-pattern relative mx-auto flex w-full flex-col items-center justify-center p-4",
+        "relative mx-auto flex w-full flex-col items-center justify-center bg-pattern p-4",
         isPhone ? "min-h-svh" : "min-h-screen",
       )}
     >
